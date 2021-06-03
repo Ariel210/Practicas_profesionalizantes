@@ -8,9 +8,9 @@ int main ()
     int fechaNac;
     int anoActual;
 
-    cout<<"Ingrese ano de nacimiento: ";
+    cout<<"Ingrese primero: ";
     cin >> fechaNac;
-    cout<<"Ingrese ano actual: ";
+    cout<<"Ingrese segundo: ";
     cin >> anoActual;
     
     edad = anoActual - fechaNac;
