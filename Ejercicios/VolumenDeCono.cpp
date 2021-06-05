@@ -8,10 +8,10 @@ int main ()
     float base_radio = 14.5;
     float alCuadrado = pow(base_radio,2);
     float altura = 26.79;
-    float PI = 3.141592;
+    float PI = 3.14;
     float volumen;
 
-    volumen = (PI * (alCuadrado)* altura) / 3;
+    volumen = (PI *(alCuadrado)* altura) / 3;
     cout<<"El volumen del cono es: "<<volumen;
 
 
