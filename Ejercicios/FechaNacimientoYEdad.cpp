@@ -16,5 +16,8 @@ int main ()
     edad = anoActual - fechaNac;
     cout<<"La edad actual es: "<< edad;
 
+    cin.ignore();
+    cin.get();
+
     return 0;
 }
