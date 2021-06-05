@@ -14,6 +14,8 @@ int main ()
     volumen = (PI *(alCuadrado)* altura) / 3;
     cout<<"El volumen del cono es: "<<volumen;
 
+    cin.ignore();
+    cin.get();
 
     return 0;
 }
