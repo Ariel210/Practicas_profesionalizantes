@@ -1,0 +1,1 @@
+//Escribe un programa en C++ que lea del teclado un número (real) de grados Fahrenheit y lo convierta a Celsius mostrando el resultado en la pantalla. ºC = 5 / 9 x (ºF ‐ 32)
