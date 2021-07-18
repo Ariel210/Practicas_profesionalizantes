@@ -9,12 +9,19 @@ mostrar la cantidad total y el promedio de palabras x línea.
 #include <string>
 using namespace std;
 
+/*void error(string message, string message2 = "")
+{
+    cerr << message << ' ' << message2 << endl;
+    exit(EXIT_FAILURE);
+}*/
+
 ifstream openFile(string path)
 {
     ifstream in;
     in.open("QuotesOfBjarne.txt");
 
-    if (!in)
+    //bool isCorruptFile = (!in.is_open() || !in.good()); 
+    if (!in)   //(isCorruptFile) error("Error opening file");
     {
         cerr << "Error opening file" << endl;
         exit(EXIT_FAILURE);
@@ -76,6 +83,11 @@ int main()
 
     cin.ignore();
     cin.get();
+    
+
+    /*ifstream textFile = openFile("QuotesOfBjarne.txt");
+    showWordsOf(textFile);
+    closeFile(textFile);*/
     
     return 0;
 }
