@@ -6,6 +6,19 @@ en una línea, con Interlineado.*/
 #include <string.h>
 using namespace std;
 
+//STROUSTRUP:
+// void error(const char* message, const char* message2 = "")
+// {
+//    cerr << message << ' ' << message2 << endl;
+//    exit(1);
+// }
+
+/*void error(string message, string message2 = "")
+{
+    cerr << message << ' ' << message2 << endl;
+    exit(EXIT_FAILURE);
+}*/
+
 ifstream openFile(string path)
 {
     ifstream in;
@@ -16,7 +29,6 @@ ifstream openFile(string path)
         cout << "Error opening file" << endl;
         exit(EXIT_FAILURE);
     }
-
     return in;
 }
 
@@ -48,6 +60,11 @@ int main()
 
     cin.ignore();
     cin.get();
+
+    
+    /*ifstream textFile = openFile("QuotesOfBjarne.txt");
+    showQuotesOf(textFile);
+    closeFile(textFile);*/
     
     return 0;
 }
